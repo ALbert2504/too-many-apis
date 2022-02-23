@@ -16,7 +16,10 @@ export const shoesCollectionApi = createApi({
     getShoes: builder.query({
       query: () => createRequest('/shoes'),
     }),
+    getShoe: builder.query({
+      query: (shoeId) => createRequest(`/shoes/${shoeId}`),
+    }),
   }),
 });
 
-export const { useGetShoesQuery } = shoesCollectionApi;
+export const { useGetShoesQuery, useGetShoeQuery } = shoesCollectionApi;
