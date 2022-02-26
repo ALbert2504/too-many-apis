@@ -26,6 +26,7 @@ const App = () => {
 
           {/*ChatBot API*/}
           <Route path="/chat-bot" element={<ChatBot />} />
+          {/*https://rapidapi.com/sameer.kumar/api/aztro/*/}
         </Routes>
       </main>
     </div>
