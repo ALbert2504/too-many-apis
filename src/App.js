@@ -19,6 +19,9 @@ const App = () => {
           {/*Shoes collection API*/}
           <Route path="/shoes-collection" element={<ShoesCollection />} />
           <Route path="/shoes-collection/:shoeId" element={<ShoePage />} />
+
+          {/*YT to MP3 API*/}
+          <Route path="/yt-to-mp3" element={<YTToMp3 />} />
         </Routes>
       </main>
     </div>
