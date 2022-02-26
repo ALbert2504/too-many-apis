@@ -11,6 +11,7 @@ const Header = () => {
           <Nav className="ms-auto">
             <Link className="nav-link" to="/shoes-collection">Shoes Collection</Link>
             <Link className="nav-link" to="/yt-to-mp3">YouTube to mp3</Link>
+            <Link className="nav-link" to="/chat-bot">ChatBot</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

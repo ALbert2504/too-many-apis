@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Col, Card, Button } from 'react-bootstrap';
+import { Col, Card } from 'react-bootstrap';
 
 
 const ShoesCollectionItem = ({ name, image, price, id }) => {

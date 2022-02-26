@@ -8,6 +8,7 @@ import {
   ShoesCollection,
   ShoePage,
   YTToMp3,
+  ChatBot,
 } from './pages';
 
 const App = () => {
@@ -22,6 +23,9 @@ const App = () => {
 
           {/*YT to MP3 API*/}
           <Route path="/yt-to-mp3" element={<YTToMp3 />} />
+
+          {/*ChatBot API*/}
+          <Route path="/chat-bot" element={<ChatBot />} />
         </Routes>
       </main>
     </div>

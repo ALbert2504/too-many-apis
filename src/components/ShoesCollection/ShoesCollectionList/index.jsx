@@ -4,7 +4,6 @@ import { Row } from 'react-bootstrap';
 import ShoesCollectionItem from './ShoesCollectionItem';
 
 const ShoesCollectionList = ({ data }) => {
-  console.log(data, 'data');
   const shoesCollectionContent = (
     data.map(({name, price, image, id}) => {
       return (
