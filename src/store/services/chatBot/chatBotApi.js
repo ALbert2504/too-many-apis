@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 const chatBotApiHeaders = {
   'content-type': 'application/json',
   'x-rapidapi-host': 'chatbot19.p.rapidapi.com',
-  'x-rapidapi-key': '27433ebcc7msh9012c9d80464867p1d8536jsn8a127fe154bf'
+  'x-rapidapi-key': process.env.REACT_APP_X_RAPID_APP_KEY
 };
 
 const baseUrl = 'https://chatbot19.p.rapidapi.com/chatbot';

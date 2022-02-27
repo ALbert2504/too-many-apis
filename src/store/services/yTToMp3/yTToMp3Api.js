@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 
 const yTToMp3ApiHeaders = {
   'x-rapidapi-host': 'youtube-mp36.p.rapidapi.com',
-  'x-rapidapi-key': '27433ebcc7msh9012c9d80464867p1d8536jsn8a127fe154bf',
+  'x-rapidapi-key': process.env.REACT_APP_X_RAPID_APP_KEY,
 };
 
 const baseUrl = 'https://youtube-mp36.p.rapidapi.com/dl';
