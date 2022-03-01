@@ -7,4 +7,6 @@ export { default as MessageItem } from './ChatBot/MessageItem';
 
 // common
 export { default as Header } from './common/Header';
-export { default as Loader } from './common/Loader';
+
+// shared
+export { default as Loader } from './shared/Loader';

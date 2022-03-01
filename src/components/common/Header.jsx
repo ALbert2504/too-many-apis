@@ -1,7 +1,18 @@
 import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
+// Constants
+import { navLinks } from '../../utils/constants';
+
 const Header = () => {
+  const navLinksContent = (
+    navLinks.map(({ href, label }) => {
+      return (
+        <Link className="nav-link" to={href} key={href}>{label}</Link>
+      );
+    })
+  );
+
   return (
     <Navbar bg="primary" variant="dark" expand="lg">
       <Container>
@@ -9,9 +20,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link className="nav-link" to="/shoes-collection">Shoes Collection</Link>
-            <Link className="nav-link" to="/yt-to-mp3">YouTube to mp3</Link>
-            <Link className="nav-link" to="/chat-bot">ChatBot</Link>
+            {navLinksContent}
           </Nav>
         </Navbar.Collapse>
       </Container>

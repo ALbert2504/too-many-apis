@@ -27,6 +27,8 @@ const App = () => {
           {/*ChatBot API*/}
           <Route path="/chat-bot" element={<ChatBot />} />
           {/*https://rapidapi.com/sameer.kumar/api/aztro/*/}
+          {/*https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator/*/}
+          {/*https://rapidapi.com/miguel.aka.kelter/api/url-to-pdf1/*/}
         </Routes>
       </main>
     </div>
