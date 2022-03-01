@@ -48,7 +48,7 @@ const YTToMp3 = () => {
           ) : (
             data && <div className="d-flex flex-column align-items-center justify-content-center mt-2">
               <p className="text-success mb-1"><b>Video:</b> {data.title}</p>
-              <a href={data.link} target="_blank">Download here</a>
+              <a href={data.link} target="_blank" rel="noreferrer">Download here</a>
             </div>
           )
         )}
