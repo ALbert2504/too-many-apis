@@ -4,26 +4,29 @@ import {
   Form,
   Button
 } from 'react-bootstrap';
-import { useGetMp3Query } from '../../store/services/yTToMp3/yTToMp3Api';
 
 // Components
 import { Loader } from '../../components';
+
+// Actions
+import { useLazyGetMp3Query } from '../../store/services/yTToMp3/yTToMp3Api';
 
 // Styles
 import './YTToMp3.css';
 
 
 const YTToMp3 = () => {
-  const inputRef = useRef(null);
   const [value, setValue] = useState('');
-  const { data, isLoading, isError } = useGetMp3Query(value, {skip: !value});
+  const [ getMp3, { data, isLoading, isError } ] = useLazyGetMp3Query();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setValue(inputRef.current.value);
-    inputRef.current.value = '';
+    getMp3(value);
   };
 
+  const handleChange = (e) => {
+    setValue(e.target.value);
+  };
 
   return (
     <div className="py-3">
@@ -33,7 +36,8 @@ const YTToMp3 = () => {
             <input
               className="video-id-input me-0 me-md-2 mb-md-0 mb-2 form-control text-center"
               placeholder="Video ID"
-              ref={inputRef}
+              value={value}
+              onChange={handleChange}
             />
             <Button type="submit">Get Download Link</Button>
           </Form>
