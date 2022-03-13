@@ -47,7 +47,7 @@ const YTToMp3 = () => {
         ) : (
           isError || data?.status === 'fail' ? (
             <p className="text-danger text-center mt-2">
-              Video ID not provided
+              Wrong video ID or not provided
             </p>
           ) : (
             data && <div className="d-flex flex-column align-items-center justify-content-center mt-2">
