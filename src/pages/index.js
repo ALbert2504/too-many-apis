@@ -7,3 +7,6 @@ export { default as YTToMp3 } from './YTToMp3';
 
 // ChatBoy
 export { default as ChatBot } from './ChatBot';
+
+// Home
+export { default as Home } from './Home';

@@ -5,6 +5,7 @@ import { Header } from './components';
 
 // Pages
 import {
+  Home,
   ShoesCollection,
   ShoePage,
   YTToMp3,
@@ -17,6 +18,9 @@ const App = () => {
       <Header />
       <main>
         <Routes>
+          {/*Home*/}
+          <Route path="/" element={<Home />} />
+
           {/*Shoes collection API*/}
           <Route path="/shoes-collection" element={<ShoesCollection />} />
           <Route path="/shoes-collection/:shoeId" element={<ShoePage />} />
